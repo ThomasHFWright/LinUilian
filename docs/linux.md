@@ -54,3 +54,18 @@ terminated (exit 143), leaving no normal run result; this was inconclusive.
 The upstream README's Windows results are retained below our fork notice
 for attribution and reference. No game data, generated shaders, caches or
 runtime binaries are distributed by this fork.
+
+## Series S experiment
+
+The `experiment/series-s` branch includes
+[fxceless PR #798](https://github.com/fxceless/victory-fork/pull/798), preserving
+its authorship. It selects the title's own upscaler instead of the FSR 4 path.
+The original executable is read-only; patches apply to a separately named
+prepared copy after build-hash and byte-signature checks. Use
+`run <executable> --execute --console series-s`; `VICTORY_TITLE_PATCHES=0`
+disables the built-in patches. Keep the Series S shader cache separate.
+
+This branch passes the diagnostics build, Windows all-target/all-feature Clippy,
+asset policy, and all 29 game/loader library tests under Wine, including the two
+new patch regressions. Both expected signatures matched in the local prepare
+check. Linux gameplay validation is still pending.
