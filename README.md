@@ -1,3 +1,18 @@
+# LinUilian
+
+Linux/Proton bring-up of [Uilian's VItoriaBr](https://github.com/uiliannn/VItoriaBr).
+The upstream project and contributors retain their authorship and GPL-3.0-or-later
+license. The executable is still named `victory.exe`.
+
+This fork adds the Wine runtime-HLSL fallback from
+[fxceless/victory-fork PR #20](https://github.com/fxceless/victory-fork/pull/20)
+and the opt-in title-watchdog hook from
+[VIctory PR #454](https://github.com/Marvisak/VIctory/pull/454).
+Linux validation is in progress; the Windows gameplay results below are upstream's.
+See [Linux notes](docs/linux.md) for the runtime requirements and test status.
+
+---
+
 # VItoriaBr
 
 > 🇧🇷 **Português** | [🇺🇸 **English below**](#english)
